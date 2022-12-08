@@ -1,0 +1,233 @@
+*{margin: 0; padding: 0;}
+
+#logo{height: 140px;}
+.talklogo{height: 40px;}
+#chatbody{height: 200px;}
+.title{padding-top: 15rem;}
+.fa-search{padding-left: .5em;}
+#bottom-right a{padding: .8em;}
+#bottom-right a{font-size: 3vh;}
+#Objective h1{font-size: 50px;}
+.emergency:hover{opacity: 0.9;}
+.logins{gap: 0.5rem;}
+.logins >*:hover{filter: brightness(.85);}
+.form-container .cancel {background-color: red;}
+.form-container h1{color: #299aa0;}
+.sidenav a:hover {color: #f1f1f1;}  
+#bottom-right hr,#bottom-center hr{width: 95%;}
+.input:focus-within{box-shadow: 1px 1px 5px rgb(129, 192, 239);}
+
+.form-container textarea,.input input,.logins >*,.emergency, .open-button,.form-container .btn,.form-container textarea{border: none;}
+.talk, .logochat, nav,.open-button, .sidenav, .chat-popup{position: fixed;}
+.input .search, .sidenav .closebtn,.Policy::after{position: absolute;}
+.input,#bottom-center,.input:focus-within{width: 50vh;}
+#fa-bars,.emergency, #emergency, .form-container .btn, .form-container, .open-button{color: white;}
+#bottom-right a:hover, .selector a:hover, .Policy:hover, .talk:hover,.selector:hover{color: #023d3a;}
+#bottom-left, #bottom-center, .selector a, #bottom-right a, #bottom-right{color:rgb(119, 110, 110);}
+.select:target, .sidenav a{display: block;}
+nav,.left,.right,.logins,.input{display: flex;}
+#fa-bars, #Objective p{font-size:30px;}
+#bottom-left p, #bottom-right,#bottom-center{font-family: arial;}
+.fa, #emergency, .selector a{text-decoration: none;}
+.hr hr,#bottom-right, #bottom, #bottom-center{height: 30vh;}
+.form-container .btn:hover, .open-button:hover {opacity: 1;}
+#fa-bars,.talk,.Policy,.selector,.form-container .btn,.open-button,.logins >*,.emergency,.logo{cursor: pointer;}
+.left,.input,.right,nav{align-items: center;}
+.sidenav, nav, .sidenav .closebtn{top: 0;}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    z-index: 1;
+    left: 0;
+    background-color: #012220;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;}
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    transition: 0.3s;} 
+.sidenav .closebtn {
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;}
+.talk{
+    bottom: 3em;
+    right: 3em;
+    height: 50px;
+    width: 20vh;
+    border-radius: 25px;
+    border: transparent;
+    padding-left: 2em;}
+.logochat{
+    height: 40px;
+    bottom: 3.32em;
+    right: 13.5em;}
+nav{
+    height: 80px;
+    background-color: #023d3a;
+    justify-content: space-between;
+    width: 100%;}
+.left{
+    padding-left: 2rem;
+    gap: 1rem;}
+.right{
+    gap: 1.6rem;
+    padding-right: 2rem;}
+.input{
+    background-color: rgba(255, 255, 255, 0.63);
+    z-index: 1;
+    padding: 0.7rem 5rem 0.7rem 2rem;
+    border-radius: 2rem;
+    box-sizing: border-box;
+    gap: 0.5rem;
+    overflow: hidden;
+    transition: width 0.25s;
+    position: relative;}
+.input input{
+    width: auto;
+    background-color: transparent;
+    outline: none;}
+.input .search{
+    left: 5px;}
+.logo{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;}
+.emergency{
+    border-radius: 20px;
+    background-color: red;
+    padding: 0.5rem 1rem 0.5rem 1rem;}
+.logins >*{
+    background-color: rgba(255, 255, 255, 0.788);
+    border-radius: 20px;
+    padding: 0.5rem 1rem 0.5rem 1rem;}
+section{
+    height: calc(100vh - 80px);
+    box-sizing: border-box;}
+.landing{  
+    height: 100vh;
+    background-color: #dbfaff;
+    background-image: url(https://bit.ly/3UyLpuy);
+    background-position: center ;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 1rem 4rem;}
+.title h1{
+     color: #5ce1e6;
+     text-shadow: 2px 3px 4px #0f2324;
+     font-size: 10rem;}
+.title h3{
+     color: #ffffff;
+     text-shadow: 2px 3px 4px #0f2324;
+     /* text-indent: 2rem; */
+     font-weight: 1;
+     font-size: xx-large;}
+#LandingPage{
+    height: 450px;
+    background-color: #67ced3;
+    padding: 1em;}
+#Objective{
+    padding: 2em;
+    color: #dbfaff;}
+#LandingPage2{
+    height: 65vh;
+    background-color: #dbfaff;
+    padding: 3em;
+    color: #0f2324;}
+#LandingPage3{
+    height: 50vh;
+    background-color: #67ced3;
+    padding: 1em;}
+.map{
+    width:70vh;
+    height:40vh;
+    border:0;
+    margin: auto;
+    padding-top: 1.5em;}
+.open-button {
+    background-color: #555;
+    padding: 16px 20px;
+    opacity: 0.8;
+    bottom: 23px;
+    right: 28px;
+    width: 280px;}
+.chat-popup {
+    display: none;
+    bottom: 20px;
+    right: 20px;
+    border: 3px solid #f1f1f1;
+    z-index: 9;}
+.form-container {
+    max-width: 300px;
+    padding: 10px;}
+.form-container textarea {
+    width: 270px;
+    height: 20px;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    background: #f1f1f1;
+    resize: none;}
+.form-container textarea:focus {
+    background-color: #ddd;
+    outline: none;}
+.form-container .btn {
+    float: left;
+    background-color: #04AA6D;
+    padding: 16px 20px;
+    width: 50%;
+    margin-bottom:10px;}
+#bottom{
+    width: 100%;
+    padding: 2em 0 0 0;  
+    display: inline-flex;}
+#bottom-left{
+    float: left;
+    width: 40vh;
+    margin: 2em;}
+#bottom-center{
+    margin: 1em;
+    padding: .5em 0 0 .6em;}
+.selector{
+    padding: .6em 0 0 0;
+    width: 30%;
+    font-weight: bold;
+    display: inline-flex;
+    justify-content: center;
+}
+#bottom-right{
+    float:right;
+    width: 32vh;
+    height: 27vh;
+    margin: 1em;
+    padding: 1em 0 0 1em;}
+.select{
+    width: 80%;
+    height: 70%;
+    padding: 0 1em 0 1em;
+    display: none;
+}
+.Policy{
+    width: 38.5%;
+    display: inline-flex;
+    justify-content: center;
+    position: relative;
+    margin: 1em;
+}
+.Policy::after {
+    content: '';
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #0087ca;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  .Policy:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;}
