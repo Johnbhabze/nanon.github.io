@@ -28,7 +28,7 @@
 .select:target, .sidenav a{display: block;}
 nav,.left,.right,.logins,.input{display: flex;}
 #fa-bars, #Objective p{font-size:30px;}
-#bottom-left p, #bottom-right,#bottom-center{font-family: arial;}
+#bottom-left p, #bottom-right,#bottom-center, #Newsletter{font-family: arial;}
 .fa, #emergency, .selector a{text-decoration: none;}
 .hr hr,#bottom-right, #bottom, #bottom-center{height: 30vh;}
 .form-container .btn:hover, .open-button:hover {opacity: 1;}
@@ -99,12 +99,12 @@ nav{
     width: 40px;
     border-radius: 50%;}
 .emergency{
-    border-radius: 20px;
+    border-radius: 4vh;
     background-color: red;
     padding: 0.5rem 1rem 0.5rem 1rem;}
 .logins >*{
     background-color: rgba(255, 255, 255, 0.788);
-    border-radius: 20px;
+    border-radius: 7vh;
     padding: 0.5rem 1rem 0.5rem 1rem;}
 section{
     height: calc(100vh - 80px);
@@ -146,7 +146,7 @@ section{
 .map{
     width:70vh;
     height:40vh;
-    border:0;
+    border:none;
     margin: auto;
     padding-top: 1.5em;}
 .open-button {
@@ -232,3 +232,17 @@ section{
   .Policy:hover::after {
     transform: scaleX(1);
     transform-origin: bottom left;}
+    
+#Concern{height: 50vh; background-color: #67ced3;}
+#Newsletter{height: 60vh; background-color: #dbfaff; padding: 3em;}
+#NewsletterContent{margin-top: 1vh; height: 59vh;}
+#NLCSub1{float: left; padding: 1vh; width: 40vh; height: 48.5vh;}
+#NLCSub2{float: left; padding: 1vh; font-size: 2.3vh; width: 75vh; height: 48.5vh;}
+#Readmore{padding: 1vh; border-radius: 3vh; border: none; float: right; background-color: #67ced3;}
+#Readmore a{text-decoration: none; font-size: 1.5vh; color:white;}
+#Readmore a:hover{color: #012220;}
+#NewsletterTitle{ height: 9vh; width: 38vh;}
+#NewsletterImage{height: 50vh; width: 40vh;}
+#NewsletterImage img{width: 30vh;}
+#FAQ{height: 50vh; background-color:#67ced3 ;}
+#promotion{height: 50vh; background-color: #dbfaff;}
