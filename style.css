@@ -16,6 +16,7 @@
 .sidenav a:hover {color: #f1f1f1;}  
 #bottom-right hr,#bottom-center hr{width: 95%;}
 .input:focus-within{box-shadow: 1px 1px 5px rgb(129, 192, 239);}
+.form-container{background-color: white;}
 
 .form-container textarea,.input input,.logins >*,.emergency, .open-button,.form-container .btn,.form-container textarea{border: none;}
 .talk, .logochat, nav,.open-button, .sidenav, .chat-popup{position: fixed;}
@@ -174,9 +175,9 @@ section{
 .form-container textarea:focus {
     background-color: #ddd;
     outline: none;}
-.form-container .btn {
+.form-container .send{background-color: #04AA6D;}
+.form-container .send, .form-container .cancel {
     float: left;
-    background-color: #04AA6D;
     padding: 16px 20px;
     width: 50%;
     margin-bottom:10px;}
