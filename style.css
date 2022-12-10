@@ -1,4 +1,6 @@
 *{margin: 0; padding: 0;}
+nav, .talk, .sidenav,.input{z-index: 1;}
+#mySidenav{z-index: 2;}
 #logo{height: 140px;}
 .talklogo{height: 40px;}
 #chatbody{height: 200px;}
@@ -17,23 +19,23 @@
 .input:focus-within{box-shadow: 1px 1px 5px rgb(129, 192, 239);}
 .form-container{background-color: white;}
 .form-container textarea,.input input,.logins >*,.emergency, .open-button,.form-container .btn,.form-container textarea{border: none;}
-.talk, .logochat, nav,.open-button, .sidenav, .chat-popup{position: fixed;}
-.input .search, .sidenav .closebtn,.Policy::after{position: absolute;}
-.input,#bottom-center,.input:focus-within{width: 50vh;}
-#fa-bars,.emergency, #emergency, .form-container .btn, .form-container, .open-button{color: white;}
-#bottom-right a:hover, .selector a:hover, .Policy:hover, .talk:hover,.selector:hover{color: #023d3a;}
+.chat-popup, .logochat, .sidenav, .talk, nav,.open-button{position: fixed;}
+.Policy::after, .input .search, .sidenav .closebtn{position: absolute;}
+#bottom-center, .input, .input:focus-within{width: 50vh;}
+#Concern h1, #emergency, #fa-bars, .emergency, .form-container, .form-container .btn, .open-button{color: white;}
+#bottom-right a:hover, .selector a:hover, .Policy:hover, .talk:hover,.selector:hover, #promotion{color: #023d3a;}
 #bottom-left, #bottom-center, .selector a, #bottom-right a, #bottom-right{color:rgb(119, 110, 110);}
 .select:target, .sidenav a{display: block;}
 nav,.left,.right,.logins,.input{display: flex;}
 #fa-bars, #Objective p{font-size:30px;}
-#bottom-left p, #bottom-right,#bottom-center, #Newsletter{font-family: arial;}
+#bottom-left p, #bottom-right,#bottom-center, #Newsletter, #Concern h1, .Concern p, #promotion{font-family: arial;}
 .fa, #emergency, .selector a{text-decoration: none;}
 .hr hr,#bottom-right, #bottom, #bottom-center{height: 30vh;}
 .form-container .btn:hover, .open-button:hover {opacity: 1;}
 #fa-bars,.talk,.Policy,.selector,.form-container .btn,.open-button,.logins >*,.emergency,.logo{cursor: pointer;}
 .left,.input,.right,nav{align-items: center;}
 .sidenav, nav, .sidenav .closebtn{top: 0;}
-.sidenav {height: 100%; width: 0; z-index: 1; left: 0; background-color: #012220; overflow-x: hidden; transition: 0.5s; padding-top: 60px;}
+.sidenav {height: 100%; width: 0; left: 0; background-color: #012220; overflow-x: hidden; transition: 0.5s; padding-top: 60px;}
 .sidenav a {padding: 8px 8px 8px 32px; text-decoration: none; font-size: 25px; color: #818181; transition: 0.3s;} 
 .sidenav .closebtn {right: 25px; font-size: 36px; margin-left: 50px;}
 .talk{bottom: 3em; right: 3em; height: 50px; width: 20vh; border-radius: 25px; border: transparent; padding-left: 2em;}
@@ -41,7 +43,7 @@ nav,.left,.right,.logins,.input{display: flex;}
 nav{height: 80px; background-color: #023d3a; justify-content: space-between; width: 100%;}
 .left{padding-left: 2rem; gap: 1rem;}
 .right{gap: 1.6rem; padding-right: 2rem;}
-.input{background-color: rgba(255, 255, 255, 0.63); z-index: 1; padding: 0.7rem 5rem 0.7rem 2rem; border-radius: 2rem; box-sizing: border-box; gap: 0.5rem; overflow: hidden; transition: width 0.25s; position: relative;}
+.input{background-color: rgba(255, 255, 255, 0.63); padding: 0.7rem 5rem 0.7rem 2rem; border-radius: 2rem; box-sizing: border-box; gap: 0.5rem; overflow: hidden; transition: width 0.25s; position: relative;}
 .input input{width: auto; background-color: transparent; outline: none;}
 .input .search{ left: 5px;}
 .logo{height: 40px; width: 40px; border-radius: 50%;}
@@ -72,7 +74,6 @@ section{height: calc(100vh - 80px); box-sizing: border-box;}
 .Policy{width: 38.5%; display: inline-flex; justify-content: center; position: relative; margin: 1em;}
 .Policy::after {content: ''; width: 100%; transform: scaleX(0); height: 2px; bottom: 0; left: 0; background-color: #0087ca; transform-origin: bottom right; transition: transform 0.25s ease-out;}
 .Policy:hover::after {transform: scaleX(1); transform-origin: bottom left;}
-#Concern{height: 50vh; background-color: #67ced3;}
 #Newsletter{height: 60vh; background-color: #dbfaff; padding: 3em;}
 #NewsletterContent{margin-top: 1vh; height: 59vh;}
 #NLCSub1{float: left; padding: 1vh; width: 40vh; height: 48.5vh;}
@@ -84,4 +85,20 @@ section{height: calc(100vh - 80px); box-sizing: border-box;}
 #NewsletterImage{height: 50vh; width: 40vh;}
 #NewsletterImage img{width: 30vh;}
 #FAQ{height: 50vh; background-color:#67ced3 ;}
-#promotion{height: 50vh; background-color: #dbfaff;}
+#Concern{padding: 2vh; height: 60vh; background-color: #67ced3;}
+.Concern{ height: 40vh; margin: 1vh; width: 30vh; border-radius: 2vh; display: inline-block;}
+.Concern img{width: 30vh; border-radius: 2vh; box-shadow: 2px 3px 4px #0f2324; opacity: 0.5;}
+.Concern img:hover{opacity: 1; cursor: pointer;}
+.Concern p{ text-align: center; margin-top: -80px; font-size: 2vh; color: white;}
+.Services{ height: 40vh; margin: 1vh; padding-top: 2vh; width: 27vh; box-shadow: 2px 3px 4px #0f2324; border-radius: 2vh; display: inline-block;}
+.Services p{ text-align: center; font-size: 2vh;}
+#promotion{height: 50vh; background-color: #dbfaff; text-align: center; padding: 2vh; }
+/* This is for the subpages */
+.pages{height: 110vh; background-color:#67ced3 ; padding: 3vh;}
+#imgpages{display: flex; align-items: center; justify-content: space-between; }
+.imgpages{height: 15vh;}
+.pages li{ margin-left: 5vh;}
+#Malasakit{display: none;}
+#Malasakit:target{display: block;}
+#Malasakit2{display: none;}
+#Malasakit2:target{display: block;}

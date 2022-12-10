@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="icon" href="https://bit.ly/3EZQo1H">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://bit.ly/3P3JAVn">
+    <script src="script.js" ></script>
+    <title>NANON ‖ Conditions</title>
+</head>
+<body>
+    <!-- This is the sidenav of the page -->
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="./conditions.html">Conditions</a>
+        <a href="./finance-help.html">Financial Assistance</a>
+        <a href="./pharmacy.html">Pharmacy</a>
+        <a href="#">Well-Being</a>
+        <a href="#">Symptom Checker</a>
+        <a href="#">FAQ</a>
+        <a href="">Settings</a>
+    </div>
+<!-- This is the end of sidenav of the page -->
+<!-- This is the header of the landing page -->
+    <nav>
+        <div class="left">
+            <span id="fa-bars" onclick="openNav()">&#9776;</span>
+            <div><a href="./index.html"><img class="logo" src="https://bit.ly/3EZQo1H" alt="logo"></a></div>
+            <div class="input">
+                <div class="search">
+                    <i class="fa fa-search"></i>
+                </div>
+                <input type="text" placeholder="Search Nanon">
+            </div>
+        </div>
+        <div class="right">
+            <button class="emergency"><a href="tel:911" id="emergency"><strong>EMERGENCY</strong></a></button>
+            <div class="logins">
+                <button class="login">Login</button>
+                <button class="signup">Sign Up</button>
+            </div>
+        </div>
+    </nav>
+<!-- This is the end of header of the landing page -->
+<!-- This is the chatbox of the landing page -->
+<button class="talk" onclick="openForm()"><img class="logochat" src="https://bit.ly/3EZQo1H" alt="logo">Chat with Nanon</button>
+<div class="chat-popup" id="myForm">
+<form action="/action_page.php" class="form-container">
+    <h1><img class="talklogo" src="https://bit.ly/3EZQo1H" alt="logo">Nanon</h1>
+
+    <label for="msg"><b>Message</b></label>
+    <div id="chatbody"></div>
+    <textarea placeholder="Type message.." name="msg" required></textarea>
+
+    
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+    <button type="submit" class="btn send">Send</button>
+</form>
+</div>
+<!-- This is the end of chatbox of the landing page -->
+<div class="pages"><h1 class="title">Display all the conditions here!</h1></div>
+<div id="bottom">
+    <div id="bottom-left">
+        <div><a href="./index.html"><h1><img class="logo" src="https://bit.ly/3EZQo1H" alt="logo"></a>Nanon.com</h1></div><br>
+        <p>Created with great passion to help the Filipino citizen's in need by Nanon team with the help of our experts. <br><br>San Alberto Carmelite Formation Center, Rosello St., Talamban, Cebu City, Cebu 6000 <br><br>All rights reserved 2022</p>
+    </div>
+    <div class="hr"><hr></div>
+    <div id="bottom-center">
+        <div class="selector"> <a href="#selector1"> Policies </a></div>
+        <div class="selector"> <a href="#selector2">About</a> </div>
+        <div class="selector"> <a href="#selector3">Support</a> </div>
+        <br><br><hr><br>
+        <div class="select" id="selector1">
+            <div class="Policy">Privacy Policy</div>
+            <div class="Policy">Cookie Policy</div>
+            <div class="Policy">Editorial Policy</div>
+            <div class="Policy">Advertising Policy</div>
+            <div class="Policy">Correction Policy</div>
+            <div class="Policy">Terms of Use</div>
+        </div>
+        <div class="select" id="selector2">
+            <div class="Policy">Contact Us</div>
+            <div class="Policy">About Nanon</div>
+            <div class="Policy">Careers</div>
+            <div class="Policy">Newsletter</div>
+            <div class="Policy">Corporate</div>
+            <div class="Policy">Site Map</div>
+        </div>
+        <div class="select" id="selector3">
+            <div class="Policy">Donate</div>
+            <div class="Policy">Volunteer</div>
+            <div class="Policy">FAQ</div>
+        </div>
+    </div>
+    <div class="hr"><hr></div>
+    <div id="bottom-right">
+        <p>You may also connect with us with the following media platforms</p><br><hr>
+        <a href="https://bit.ly/3BeERuv" target="https://bit.ly/3BeERuv" class="fa fa-facebook-f" onclick="media()"></a>
+        <a href="https://bit.ly/3Y49w7B" target="https://bit.ly/3Y49w7B" class="fa fa-twitter" onclick="media()"></a>
+        <a href="https://bit.ly/3uBYIQG" target="https://bit.ly/3uBYIQG" class="fa fa-instagram" onclick="media()"></a>
+        <a href="https://bit.ly/3FwOupR" target="https://bit.ly/3FwOupR" class="fa fa-pinterest" onclick="media()"></a>
+    </div>
+</body>
+</html>
